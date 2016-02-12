@@ -35,10 +35,10 @@
 
 > mean(oxsum)
 [1] 370.6923
-> medium(oxsum)
-Error: could not find function "medium"
+
 > median(oxsum)
 [1] 369.5
+
 > c. it can be increased to infinity, and decrease to 370 without affecting the simple mean. 424 - 370 = 54 is the value be derceased without affecting
 
 > d. mean = 370.6923/60 = 6.1782
@@ -56,7 +56,34 @@ c. 1.394 - 1.011 = .383
 
 ----------------------------------------
 44)
-a) 182.6- 180.3 = 2.3
+a) 182.6 - 180.3 = 2.3
 
 b)
+> temp <- c(180.5, 181.7, 180.9, 181.6, 182.6, 181.6, 181.3, 182.1, 182.1, 180.3, 181.7, 180.5)
+> var(temp)
+[1] 0.5244697
+
+c) sqrt(var(temp))
+[1] 0.7242028
+
+d) v=var(temp)
+
+x=sum(temp)
+x2=sum(temp^2)
+
+
+55)
+a)
+esc_time <- c(389, 356, 359, 363, 375, 424, 325, 394, 402, 373, 373, 370, 364, 366, 364, 325, 339, 393, 392, 369, 374, 359, 356, 403, 334, 397)
+quantile(esc_time)
+    0%    25%    50%    75%   100% 
+325.00 359.00 369.50 391.25 424.00
+
+fourth spread = 391.25 - 359 = 32.25
+
+b) no
+
+c) box_plot(esc_time)
+
+d) 424 - 392 = 32
 
